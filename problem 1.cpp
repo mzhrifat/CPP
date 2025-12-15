@@ -83,7 +83,6 @@ int main() {
     
     return 0;
 }
-    */
 
 //Difference
 
@@ -98,6 +97,87 @@ int main() {
     DIFERENCA = A * B - C * D;
     
     cout << "DIFERENCA = " << DIFERENCA << endl;
+    
+    return 0;
+}
+
+//salary
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int NUMBER, hours;
+    double perHour, SALARY;
+    
+    cin >> NUMBER >> hours >> perHour;
+    
+    SALARY = hours * perHour;
+    
+    cout << fixed << setprecision(2);
+    cout << "NUMBER = " << NUMBER << endl;
+    cout << "SALARY = U$ " << SALARY << endl;
+    
+    return 0;
+}
+    
+
+    //salary with bonus
+
+    #include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    string name;
+    double salary, sales, TOTAL;
+    
+    cin >> name >> salary >> sales;
+    
+    TOTAL = salary + (sales * 0.15);
+    
+    cout << fixed << setprecision(2);
+    cout << "TOTAL = R$ " << TOTAL << endl;
+    
+    return 0;
+}
+    
+    //Sphere
+    #include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double R, VOLUME;
+    double pi = 3.14159;
+    
+    cin >> R;
+    
+    VOLUME = (4.0/3.0) * pi * R * R * R;
+    
+    cout << fixed << setprecision(3);
+    cout << "VOLUME = " << VOLUME << endl;
+    
+    return 0;
+}
+    */
+//Fuel spent
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int time, speed;
+    double distance, liters;
+    
+    cin >> time >> speed;
+    
+    distance = time * speed;
+    liters = distance / 12.0;
+    
+    cout << fixed << setprecision(3);
+    cout << liters << endl;
     
     return 0;
 }
