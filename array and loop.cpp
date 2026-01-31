@@ -13,7 +13,7 @@ int main(){
     }
     return 0;
 }
-*/
+
 
 //example outputs the index of each element together with its value:
 #include <iostream>
@@ -26,4 +26,44 @@ int main(){
         cout <<i << "="<<cars[i] << "\n";
     }
     return 0;
+}
+
+
+//Loop through integers:
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    //create an array of integers
+    int myNumbers[5] = {10,27,40,50,67};
+
+    //loop through integers
+    for (int num:myNumbers){
+        cout << num<< "\n";
+    }
+    return 0;
+
+}
+    */
+    
+//loop through string
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    //create an array of strings
+
+    string cars[5]={"Volvo", "BMW", "Ford", "Mazda", "Tesla"};
+
+    //loop through strings
+    for (string car:cars){
+        cout << car << "\n";
+
+    }
+    return 0;
+  
 }
