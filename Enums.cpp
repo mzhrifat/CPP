@@ -13,7 +13,7 @@ int main(){
     cout << myVar;
     return 0;
 }
-*/
+
 
 #include <iostream>
 using namespace std;
@@ -24,4 +24,20 @@ int main(){
     Color c = BLUE;
     cout << c;
     return 0;
+}
+    */
+//using variable
+
+#include <iostream>
+using namespace std;
+
+enum Status {OFF,ON};
+
+int main() {
+    Status s = ON;
+
+    if (s==ON){
+        cout << "Device is ON";
+    }
+    
 }
