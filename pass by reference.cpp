@@ -13,7 +13,7 @@ int main(){
     cout << value;
     return 0;
 }
-*/
+
 
 //Pass two integers by reference:
 
@@ -37,4 +37,24 @@ int main(){
 
     return 0;
 
+
 }
+*/
+
+//pass a string by reference
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+void modifyStr(string &str){
+    str += "world!";
+}
+
+int main(){
+    string greeting = "Hello";
+    modifyStr(greeting);
+    cout << greeting;
+    return 0;
+}
+
