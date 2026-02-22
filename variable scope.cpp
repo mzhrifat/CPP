@@ -32,7 +32,7 @@ int main(){
     cout << x;
     return 0;
 }
-    */
+    
 
 
     //3
@@ -53,3 +53,48 @@ int main(){
     cout << x;
     return 0;
 }
+  
+
+
+//Naming Variables
+//The function will print the local x, and then the code will print the global x:
+
+#include <iostream>
+using namespace std;
+
+//Global variable x
+int x=5;
+void myFunction(){
+    // Local variable with the same name as the global variable (x)
+    int x=22;
+    cout <<x<<"\n"; //refers t the local variable x
+}
+
+int main(){
+    myFunction();
+    cout << x; //refers to the Global variabe x
+
+    return 0;
+}
+  */
+
+//5
+//However, you should avoid using the same variable name for both globally and locally variables as it can lead to errors and confusion.
+
+//In general, you should be careful with global variables, since they can be accessed and modified from any function:
+
+#include <iostream>
+using namespace std;
+
+//Global variable x
+int x= 5;
+
+void myFunction(){
+    cout << ++x <<"\n";
+}
+
+int main(){
+    myFunction();
+        cout <<x;//print the global variable x
+        return 0;
+    }
